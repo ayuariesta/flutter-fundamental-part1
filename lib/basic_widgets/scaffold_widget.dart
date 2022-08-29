@@ -1,30 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world/basic_widgets/dialog_widget.dart';
-import 'package:hello_world/basic_widgets/input_widget.dart';
-import 'package:hello_world/basic_widgets/scaffold_widget.dart';
-import 'package:hello_world/basic_widgets/time_picker.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+class MyScaffold extends StatelessWidget {
+  const MyScaffold({Key? key}) : super(key: key);
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'My Increment App'),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+  const MyHomePage({Key? key, required this.title}) : super(key: key);
 
   final String title;
 
@@ -61,11 +54,17 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          height: 50.0,
+        ),
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
-        tooltip: 'Increment',
+        tooltip: 'Increment Counter',
         child: const Icon(Icons.add),
-      ),
+      ), 
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 }
