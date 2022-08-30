@@ -8,22 +8,22 @@ class MyTimePicker extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Contoh Date Picker',
-      home: MyHomePage(title: 'Contoh Date Picker'),
+      home: MyTanggal(title: 'Contoh Date Picker'),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
+class MyTanggal extends StatefulWidget {
+  const MyTanggal({Key? key, required this.title}) : super(key: key);
 
   final String title;
 
   @override
   // ignore: library_private_types_in_public_api
-  _MyHomePageState createState() => _MyHomePageState();
+  _MyTanggal createState() => _MyTanggal();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MyTanggal extends State<MyTanggal> {
   // Variable/State untuk mengambil tanggal
   DateTime selectedDate = DateTime.now();
 

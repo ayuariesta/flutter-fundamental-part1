@@ -20,6 +20,13 @@ Pada praktikum ini, kita mencoba mengubah tulisan yang ada pada tampilan di andr
 Pada praktikum ini, kita mengubah yang sebelumnya tulisan menjadi gambar dan mengaturnya di pubspec.yaml.
 
 ## Praktikum 4: Menerapkan Widget Material Design dan iOS Cupertino
+### Cupertino Button dan Loading Bar
+![Screenshot hello_world](images/08.png)
+
+### Floating Action Button (FAB)
+![Screenshot hello_world](images/09.png)
+
+
 ### Scaffold Widget
 ![Screenshot hello_world](images/04.png)
 Pada praktikum bagian ini, tampilan default project flutter akan diubah seperti pada gambar.
@@ -35,3 +42,6 @@ Pada praktikum ini, kita diajarkan untuk membuat sebuah input. Disini kita bisa 
 ### Date and Time Pickers
 ![Screenshot hello_world](images/07.png)
 Pada praktikum ini, kita diajarkan membuat date picker dan menerapkannya pada project flutter.
+
+### Tugas 2
+![Screenshot hello_world](images/10.png)
